@@ -28,15 +28,11 @@ void	first(int x)
 	write(1, &lf , 1);
 }
 
-void intern(int x, int y)
+void intern(int x)
 {
 	char	v;
 	int index;
-	char lf;
-	int i_2;
 
-	i_2 = y;
-	lf = 10;
 	index = 1;
 
 
@@ -56,15 +52,6 @@ void intern(int x, int y)
 		}
 		write(1, &v, 1);
 		index++;
-		if (index == (x + 1))
-		{
-			write(1, &lf , 1);
-			while (i_2 >= 0)
-			{
-				index = 1;
-				i_2--;
-			}
-		}
 	}
 }
 
@@ -100,7 +87,18 @@ void	last(int x)
 
 void	rush(int x, int y)
 {
+	int index;
+	char lf;
+
+	lf = 10;
+	index = 2;
+
 	first(x);
-	intern(x, y);
+	while (index < y)
+	{
+		intern(x);
+		index++;
+		write(1, &lf , 1);
+	}
 	last(x);
 }
