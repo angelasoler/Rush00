@@ -3,33 +3,41 @@
 /*                                                        :::      ::::::::   */
 /*   rush01.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
+/*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 04:35:22 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/05 14:56:48 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/05 15:30:25 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 
 void ft_putchar(char c);
 
-void rush(int x, int y){
-char a[2]; 
-
-a[0] = x;
-a[1] = y;
-
-//while (a[0]>0)
-if (a[0]>=1 && a[1]>=2){
-	ft_putchar('/');
+void rush(int *x)
+{
 	
-}
+	
+	// char a[2];
 
-
-
-
-
+	// a[0] = '1';
+	// a[1] = 92;
+	
+	// while (a[0] <= x)
+	// {
+	// 	if (a[0] == '1')
+	// 	{
+	// 		write(1, '/', 1);
+	// 	}
+	// 	if (a[0] == x)
+	// 	{
+	// 		write(1, &a[1], 1);
+	// 	}
+	// 	if (a[0] != '1' && a[0] != x)
+	// 	{
+	// 		write(1, '*', 1);
+	// 	}
+	// 	a[0]++;
+	// }
 }
