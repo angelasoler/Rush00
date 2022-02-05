@@ -2,5 +2,16 @@
 
 int	main(void)
 {
-	rush(5);
+	int x;
+	int y;
+
+	x = 5;
+	y = 3;
+	
+	first(x);
+	intern(x);
+	last(x);
+
+
+	rush(y);
 }
