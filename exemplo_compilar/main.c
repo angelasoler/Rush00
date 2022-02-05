@@ -2,5 +2,5 @@
 
 int	main(void)
 {
-	funcao_teste('L');
+	funcao_teste('\n');
 }
