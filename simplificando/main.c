@@ -5,13 +5,13 @@ int	main(void)
 	int x;
 	int y;
 
-	x = 5;
+	x = 2;
 	y = 3;
 	
-	first(x);
-	intern(x);
-	last(x);
+	// first(x);
+	// intern(x, y);
+	// last(x);
 
 
-	rush(y);
+	rush(x, y);
 }

@@ -3,9 +3,9 @@ void	first(int x)
 {
 	char	v;
 	int index;
-	// char lf;
+	char lf;
 
-	// lf = 10;
+	lf = 10;
 	index = 1;
 
 	while (index <= x)
@@ -23,23 +23,26 @@ void	first(int x)
 			v = '*';
 		}
 		write(1, &v, 1);
-		// write(1, &lf , 1);
 		index++;
 	}
+	write(1, &lf , 1);
 }
 
-void intern(int x)
+void intern(int x, int y)
 {
 	char	v;
 	int index;
-	// char lf;
+	char lf;
+	int i_2;
 
-	// lf = 10;
+	i_2 = y;
+	lf = 10;
 	index = 1;
+
 
 	while (index <= x)
 	{
-		if (index == 1 || index == x)
+		if (index == 1)
 		{
 			v = '*';
 		}
@@ -47,9 +50,21 @@ void intern(int x)
 		{
 			v = ' ';
 		}
+		if (index == x)
+		{
+			v = '*';
+		}
 		write(1, &v, 1);
-		// write(1, &lf , 1);
 		index++;
+		if (index == (x + 1))
+		{
+			write(1, &lf , 1);
+			while (i_2 >= 0)
+			{
+				index = 1;
+				i_2--;
+			}
+		}
 	}
 }
 
@@ -57,10 +72,11 @@ void	last(int x)
 {
 	char	v;
 	int index;
-	// char	lf;
+	char	lf;
 
-	// lf = 10;
+	lf = 10;
 	index = 1;
+
 
 	while (index <= x)
 	{
@@ -77,14 +93,14 @@ void	last(int x)
 			v = '*';
 		}
 		write(1, &v, 1);
-		// write(1, &lf , 1);
 		index++;
 	}
+	write(1, &lf , 1);
 }
 
-void	rush(int y)
+void	rush(int x, int y)
 {
-	first(1);
-	intern(y);
-	last(1);
+	first(x);
+	intern(x, y);
+	last(x);
 }
