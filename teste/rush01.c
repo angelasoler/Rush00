@@ -6,38 +6,38 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 04:35:22 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/05 15:30:25 by asoler           ###   ########.fr       */
+/*   Updated: 2022/02/05 16:04:02 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 
-void ft_putchar(char c);
+void ft_putchar(char *c);
 
 void rush(int *x)
 {
 	
 	
-	// char a[2];
+	char a[2];
 
-	// a[0] = '1';
-	// a[1] = 92;
+	a[0] = '1';
+	a[1] = 92;
 	
-	// while (a[0] <= x)
-	// {
-	// 	if (a[0] == '1')
-	// 	{
-	// 		write(1, '/', 1);
-	// 	}
-	// 	if (a[0] == x)
-	// 	{
-	// 		write(1, &a[1], 1);
-	// 	}
-	// 	if (a[0] != '1' && a[0] != x)
-	// 	{
-	// 		write(1, '*', 1);
-	// 	}
-	// 	a[0]++;
-	// }
+	while (a[0] <= &x)
+	{
+		if (a[0] == '1')
+		{
+			ft_putchar('/');
+		}
+		if (a[0] == &x)
+		{
+			ft_putchar(&a[1]);
+		}
+		if (a[0] != '1' && a[0] != &x)
+		{
+			ft_putchar('*');
+		}
+		a[0]++;
+	}
 }

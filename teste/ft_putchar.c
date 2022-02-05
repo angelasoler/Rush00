@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
+/*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 04:24:48 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/05 14:15:40 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/05 16:03:24 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c){
+void ft_putchar(char *c){
 			write(1,&c,1);
 }
