@@ -8,7 +8,7 @@ void	first(int x)
 	lf = 10;
 	index = 1;
 
-	while (index <= x)
+	while (index <= x) //=enquanto
 	{
 		if (index == 1)
 		{

@@ -1,4 +1,5 @@
-#include "rush01.c"
+#include "rush01x.c"
+#include <unistd.h>
 
 int	main(void)
 {
