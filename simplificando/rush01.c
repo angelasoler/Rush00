@@ -15,7 +15,7 @@ void	rush(int x)
 		}
 		if (index == x)
 		{
-			v = 92;
+			v = 92; //código ascii de barra invertida
 		}
 		if (index > 1 && index < x)
 		{
