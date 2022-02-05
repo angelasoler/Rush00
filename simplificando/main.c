@@ -1,6 +1,8 @@
-#include "rush01.c"
+#include "rush01x.c"
+#include <unistd.h>
 
 int	main(void)
 {
-	rush(5);
+	rush(10,5);
+	return(0);
 }

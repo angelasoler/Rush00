@@ -7,7 +7,7 @@ void	rush(int x)
 
 	index = 1;
 
-	while (index <= x)
+	while (index <= x) //=enquanto
 	{
 		if (index == 1)
 		{
