@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   rush01.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
+/*   By: lsousa <lsousa@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 02:57:10 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/06 04:33:14 by lsousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char v);
 // void rush(int x, int y);
 
 void	first(int x)
@@ -36,10 +37,10 @@ void	first(int x)
 		{
 			v = '*';
 		}
-		write(1, &v, 1);
+		ft_putchar(v);
 		index++;
 	}
-	write(1, &lf, 1);
+	ft_putchar(lf);
 }
 
 void	intern(int x)
@@ -62,7 +63,7 @@ void	intern(int x)
 		{
 			v = '*';
 		}
-		write(1, &v, 1);
+		ft_putchar(v);
 		index++;
 	}
 }
@@ -89,10 +90,10 @@ void	last(int x)
 		{
 			v = '*';
 		}
-		write(1, &v, 1);
+		ft_putchar(v);
 		index++;
 	}
-	write(1, &lf, 1);
+	ft_putchar(lf);
 }
 
 void	rush(int x, int y)
@@ -107,7 +108,7 @@ void	rush(int x, int y)
 	{
 		intern(x);
 		index++;
-		write(1, &lf, 1);
+		ft_putchar(lf);
 	}
 	if (y > 1)
 	{

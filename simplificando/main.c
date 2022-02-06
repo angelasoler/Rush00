@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
+/*   By: lsousa <lsousa@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:30:03 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 02:30:19 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/06 05:32:59 by lsousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush01.c"
-
-// void rush(int x, int y);
+void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(5, 5);
+	rush(50, 5);
+	return (0);
 }
