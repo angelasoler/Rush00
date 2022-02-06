@@ -6,13 +6,17 @@
 /*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 02:57:10 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/06 04:52:33 by fviana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "ft_putchar.c"
 
 // void rush(int x, int y);
+void ft_putchar(char v);
+
+void ft_putc(char lf);
 
 void	first(int x)
 {
@@ -36,10 +40,10 @@ void	first(int x)
 		{
 			v = '*';
 		}
-		write(1, &v, 1);
+		ft_putchar(v);
 		index++;
 	}
-	write(1, &lf, 1);
+	ft_putc(lf);
 }
 
 void	intern(int x)
@@ -62,7 +66,7 @@ void	intern(int x)
 		{
 			v = '*';
 		}
-		write(1, &v, 1);
+		ft_putchar(v);
 		index++;
 	}
 }
@@ -89,10 +93,10 @@ void	last(int x)
 		{
 			v = '*';
 		}
-		write(1, &v, 1);
+		ft_putchar(v);
 		index++;
 	}
-	write(1, &lf, 1);
+	ft_putc(lf);;
 }
 
 void	rush(int x, int y)
@@ -107,7 +111,7 @@ void	rush(int x, int y)
 	{
 		intern(x);
 		index++;
-		write(1, &lf, 1);
+		ft_putc(lf);
 	}
 	if (y > 1)
 	{

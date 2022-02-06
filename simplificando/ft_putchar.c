@@ -6,7 +6,7 @@
 /*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 04:24:48 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 02:28:58 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/06 04:45:45 by fviana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,8 @@
 void	ft_putchar(char v)
 {
 	write(1, &v, 1);
+}
+void	ft_putc(char lf)
+{
+	write(1, &lf, 1);
 }
