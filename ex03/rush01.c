@@ -6,7 +6,7 @@
 /*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 16:08:30 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/06 22:01:25 by fviana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,15 @@ void	first(int x)
 	{
 		if (index == 1)
 		{
-			v = '/';
+			v = 'A';
 		}
 		if (index == x && x > 1)
 		{
-			v = 92;
+			v = 'C';
 		}
 		if (index > 1 && index < x)
 		{
-			v = '*';
+			v = 'B';
 		}
 		ft_putchar(v);
 		index++;
@@ -52,7 +52,7 @@ void	intern(int x)
 	{
 		if (index == 1)
 		{
-			v = '*';
+			v = 'B';
 		}
 		if (index > 1 && index < x)
 		{
@@ -60,7 +60,7 @@ void	intern(int x)
 		}
 		if (index == x && x > 1)
 		{
-			v = '*';
+			v = 'B';
 		}
 		ft_putchar(v);
 		index++;
@@ -79,15 +79,15 @@ void	last(int x)
 	{
 		if (index == 1)
 		{
-			v = 92;
+			v = 'A';
 		}
 		if (index == x && x > 1)
 		{
-			v = '/';
+			v = 'C';
 		}
 		if (index > 1 && index < x)
 		{
-			v = '*';
+			v = 'B';
 		}
 		ft_putchar(v);
 		index++;
@@ -102,7 +102,13 @@ void	rush(int x, int y)
 
 	lf = 10;
 	index = 2;
-	first(x);
+	if (y < 0)
+	{
+		y = 0;
+		x = y;
+	}
+	if (y != 0)
+		first(x);
 	while (index < y)
 	{
 		intern(x);
@@ -110,7 +116,5 @@ void	rush(int x, int y)
 		ft_putchar(lf);
 	}
 	if (y > 1)
-	{
 		last(x);
-	}
 }
