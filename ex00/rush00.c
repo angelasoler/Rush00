@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush01.c                                           :+:      :+:    :+:   */
+/*   rush00.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lsousa <lsousa@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 16:04:02 by lsousa           ###   ########.fr       */
+/*   Created: 2022/02/06 20:24:15 by lsousa            #+#    #+#             */
+/*   Updated: 2022/02/06 21:47:22 by lsousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,28 +18,22 @@ void	first(int x)
 {
 	char	v;
 	int		index;
-	char	lf;
 
-	lf = 10;
 	index = 1;
 	while (index <= x)
 	{
-		if (index == 1)
+		if (index == 1 || (index == x && x > 1))
 		{
-			v = '/';
-		}
-		if (index == x && x > 1)
-		{
-			v = 92;
+			v = 'o';
 		}
 		if (index > 1 && index < x)
 		{
-			v = '*';
+			v = '-';
 		}
 		ft_putchar(v);
 		index++;
 	}
-	ft_putchar(lf);
+	ft_putchar('\n');
 }
 
 void	intern(int x)
@@ -50,17 +44,13 @@ void	intern(int x)
 	index = 1;
 	while (index <= x)
 	{
-		if (index == 1)
+		if (index == 1 || (index == x && x > 1))
 		{
-			v = '*';
+			v = 124;
 		}
 		if (index > 1 && index < x)
 		{
 			v = ' ';
-		}
-		if (index == x && x > 1)
-		{
-			v = '*';
 		}
 		ft_putchar(v);
 		index++;
@@ -77,17 +67,13 @@ void	last(int x)
 	index = 1;
 	while (index <= x)
 	{
-		if (index == 1)
+		if (index == 1 || (index == x && x > 1))
 		{
-			v = 92;
-		}
-		if (index == x && x > 1)
-		{
-			v = '/';
+			v = 'o';
 		}
 		if (index > 1 && index < x)
 		{
-			v = '*';
+			v = '-';
 		}
 		ft_putchar(v);
 		index++;
@@ -98,19 +84,21 @@ void	last(int x)
 void	rush(int x, int y)
 {
 	int		index;
-	char	lf;
 
-	lf = 10;
 	index = 2;
-	first(x);
+	if (y < 0)
+	{
+		y = 0;
+		x = y;
+	}
+	if (y != 0)
+		first(x);
 	while (index < y)
 	{
 		intern(x);
 		index++;
-		ft_putchar(lf);
+		ft_putchar('\n');
 	}
 	if (y > 1)
-	{
 		last(x);
-	}
 }
