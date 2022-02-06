@@ -6,7 +6,7 @@
 /*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 04:52:33 by fviana           ###   ########.fr       */
+/*   Updated: 2022/02/06 15:25:43 by fviana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	first(int x)
 		ft_putchar(v);
 		index++;
 	}
-	ft_putc(lf);
+	ft_putchar(lf);
 }
 
 void	intern(int x)
@@ -96,7 +96,7 @@ void	last(int x)
 		ft_putchar(v);
 		index++;
 	}
-	ft_putc(lf);;
+	ft_putchar(lf);;
 }
 
 void	rush(int x, int y)
@@ -111,7 +111,7 @@ void	rush(int x, int y)
 	{
 		intern(x);
 		index++;
-		ft_putc(lf);
+		ft_putchar(lf);
 	}
 	if (y > 1)
 	{
