@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush01.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
+/*   Updated: 2022/02/06 02:57:10 by fviana           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 // void rush(int x, int y);
@@ -5,13 +17,12 @@
 void	first(int x)
 {
 	char	v;
-	int index;
-	char lf;
+	int		index;
+	char	lf;
 
 	lf = 10;
 	index = 1;
-
-	while (index <= x) //=enquanto
+	while (index <= x)
 	{
 		if (index == 1)
 		{
@@ -19,7 +30,7 @@ void	first(int x)
 		}
 		if (index == x && x > 1)
 		{
-			v = 92; //código ascii de barra invertida
+			v = 92;
 		}
 		if (index > 1 && index < x)
 		{
@@ -28,17 +39,15 @@ void	first(int x)
 		write(1, &v, 1);
 		index++;
 	}
-	write(1, &lf , 1);
+	write(1, &lf, 1);
 }
 
-void intern(int x)
+void	intern(int x)
 {
 	char	v;
-	int index;
+	int		index;
 
 	index = 1;
-
-
 	while (index <= x)
 	{
 		if (index == 1)
@@ -49,7 +58,7 @@ void intern(int x)
 		{
 			v = ' ';
 		}
-		if (index == x  && x > 1)
+		if (index == x && x > 1)
 		{
 			v = '*';
 		}
@@ -61,20 +70,18 @@ void intern(int x)
 void	last(int x)
 {
 	char	v;
-	int index;
+	int		index;
 	char	lf;
 
 	lf = 10;
 	index = 1;
-
-
 	while (index <= x)
 	{
 		if (index == 1)
 		{
 			v = 92;
 		}
-		if (index == x  && x > 1)
+		if (index == x && x > 1)
 		{
 			v = '/';
 		}
@@ -85,13 +92,13 @@ void	last(int x)
 		write(1, &v, 1);
 		index++;
 	}
-	write(1, &lf , 1);
+	write(1, &lf, 1);
 }
 
 void	rush(int x, int y)
 {
-	int index;
-	char lf;
+	int		index;
+	char	lf;
 
 	lf = 10;
 	index = 2;
@@ -100,7 +107,7 @@ void	rush(int x, int y)
 	{
 		intern(x);
 		index++;
-		write(1, &lf , 1);
+		write(1, &lf, 1);
 	}
 	if (y > 1)
 	{
