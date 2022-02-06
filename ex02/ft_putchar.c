@@ -6,17 +6,13 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 04:24:48 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 17:47:39 by asoler           ###   ########.fr       */
+/*   Updated: 2022/02/06 16:22:03 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char *array, int x, int y)
+void	ft_putchar(char v)
 {
-	char lf;
-	lf = 92;
-	
-	write(1, array, x);
-	write(1, &lf, 1);
+	write(1, &v, 1);
 }

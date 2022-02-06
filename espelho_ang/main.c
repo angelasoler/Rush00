@@ -1,8 +1,11 @@
-#include "rush01.c"
+#include "ft_putchar.c"
 
 int main(void)
 {
-	rush();
-	return(0);
+	int x = 5;
+	char ar[4] = "/**";
+	ar[3] = 92;
+
+	ft_putchar(ar, x);
 }
 

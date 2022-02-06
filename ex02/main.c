@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/05 04:24:48 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 17:47:39 by asoler           ###   ########.fr       */
+/*   Created: 2022/02/06 02:30:03 by fviana            #+#    #+#             */
+/*   Updated: 2022/02/06 16:42:35 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	rush(int x, int y);
 
-void	ft_putchar(char *array, int x, int y)
+int	main(void)
 {
-	char lf;
-	lf = 92;
-	
-	write(1, array, x);
-	write(1, &lf, 1);
+	rush(5, 6);
+	return (0);
 }
