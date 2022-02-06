@@ -6,14 +6,18 @@
 /*   By: lsousa <lsousa@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:31:15 by fviana            #+#    #+#             */
-/*   Updated: 2022/02/06 04:33:14 by lsousa           ###   ########.fr       */
+/*   Updated: 2022/02/06 15:43:52 by lsousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "ft_putchar.c"
 
 void	ft_putchar(char v);
 // void rush(int x, int y);
+void ft_putchar(char v);
+
+void ft_putc(char lf);
 
 void	first(int x)
 {
