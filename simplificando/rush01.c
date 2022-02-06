@@ -1,4 +1,7 @@
 #include <unistd.h>
+
+// void rush(int x, int y);
+
 void	first(int x)
 {
 	char	v;
@@ -14,7 +17,7 @@ void	first(int x)
 		{
 			v = '/';
 		}
-		if (index == x)
+		if (index == x && x > 1)
 		{
 			v = 92; //código ascii de barra invertida
 		}
@@ -46,7 +49,7 @@ void intern(int x)
 		{
 			v = ' ';
 		}
-		if (index == x)
+		if (index == x  && x > 1)
 		{
 			v = '*';
 		}
@@ -71,7 +74,7 @@ void	last(int x)
 		{
 			v = 92;
 		}
-		if (index == x)
+		if (index == x  && x > 1)
 		{
 			v = '/';
 		}
@@ -92,7 +95,6 @@ void	rush(int x, int y)
 
 	lf = 10;
 	index = 2;
-
 	first(x);
 	while (index < y)
 	{
@@ -100,5 +102,8 @@ void	rush(int x, int y)
 		index++;
 		write(1, &lf , 1);
 	}
-	last(x);
+	if (y > 1)
+	{
+		last(x);
+	}
 }
