@@ -6,18 +6,14 @@
 /*   By: fviana <fviana@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 02:30:03 by fviana            #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/02/06 16:09:36 by fviana           ###   ########.fr       */
-=======
-/*   Updated: 2022/02/06 15:53:00 by lsousa           ###   ########.fr       */
->>>>>>> c167a22acb760783f54f8be499e36d287318430f
+/*   Updated: 2022/02/06 21:12:11 by fviana           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	rush(int x, int y);
- 
-int	main()
+
+int	main(void)
 {
-	rush(50, 50);
+	rush(10, 10);
 	return (0);
 }
