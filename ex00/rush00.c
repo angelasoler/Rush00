@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rush00.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lsousa <lsousa@student.42sp.org.br>        +#+  +:+       +#+        */
+/*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 20:24:15 by lsousa            #+#    #+#             */
-/*   Updated: 2022/02/06 21:47:22 by lsousa           ###   ########.fr       */
+/*   Updated: 2022/02/07 02:02:58 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void	last(int x)
 
 void	rush(int x, int y)
 {
-	int		index;
+	int	index;
 
 	index = 2;
 	if (y < 0)
