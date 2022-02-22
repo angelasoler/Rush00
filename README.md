@@ -18,6 +18,6 @@ Printing different sizes of arrays in teminal, should modify de size modifying t
 
 Then compile and run using these commands:
 
-```gcc main.c```
+```gcc *.c```
 
 ```./a.out```
